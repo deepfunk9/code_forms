@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>
+    Stu's Cheatsheet!
+  </title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+  
+<body>
+  <h1>Stu's Forms Notes</h1>
+  <h2>Elements</h2>
+  
+  <div style="overflow-x:auto;">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Attributes</th>
+        <th>Example</th>
+        <th>Close Tag Required</th>
+        <th>Child Element</th>
+        <th>Child Element Attribute</th>
+        <th>Example</th>
+        <th>Close Tag Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Form</td>
+        <td>Method, Action</td>
+        <td>method="post" action="http:server1"</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Label</td>
+        <td>for</td>
+        <td>for="fname"</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Input</td>
+        <td>type name id value</td>
+        <td>type="text" name="fname" id="fname" value="yes"</td>
+        <td>No</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Textarea</td>
+        <td>rows+cols+name</td>
+        <td>rows="10 cols="30" name="comment"</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Select</td>
+        <td>name</td>
+        <td>name="rental-option"</td>
+        <td>Yes</td>
+        <td>option</td>
+        <td>value</td>
+        <td>option value="family"</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Types of Input Elements</h2>
+    <div style="overflow-x:auto;">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Attributes</th>
+        <th>Example</th>
+        <th>Close Tag Required</th>
+        <th>Child Element</th>
+        <th>Child Element Attribute</th>
+        <th>Example</th>
+        <th>Close Tag Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Number</td>
+        <td>type max min</td>
+        <td>type="number" min="1" max="20"</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Checkbox</td>
+        <td>type</td>
+        <td>type="checkbox"</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Radio</td>
+        <td>type</td>
+        <td>type="radio"</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Range</td>
+        <td>type</td>
+        <td>type="range" name="movie-rating" min="0" max="10" step="0.1"</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>type name maxlength minlength</td>
+        <td>type="text" name="tweet" maxlength="140"</td>
+        <td>No</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>type name</td>
+        <td>type="password" name="password"</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Pattern</td>
+        <td>pattern</td>
+        <td>pattern="[A-Za-z]{3}"</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Required</td>
+        <td>required</td>
+        <td>type="password" name="password"</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Datalist</td>
+        <td>list id</td>
+        <td>list="datalist" id="ide"</td>
+        <td>Yes</td>
+        <td>option</td>
+        <td>value</td>
+        <td>datalist id="datalist" option value="family"</td>
+        <td>nested</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+<h2>Examples</h2>
+<br>
+<label for="number">Number</label>
+<br>
+<input type="number" name="number" id="number" min="1" max="20">
+<br>
+<br>
+<label for="checkbox">Checkbox</label>
+<br>
+<input type="checkbox" name="checkbox" id="checkbox" value="yes">
+<br>
+<br>
+<label for="radio">Radio</label>
+<br>
+<span>Yes</span><input type="radio" name="name" id="name" value="yes">
+<span>No</span><input type="radio" name="name" id="name" value="no">
+<br>
+<br>
+
+<label for="range">Range</label>
+<br>
+<span>0</span><input type="range" name="range" min="0" max="10" step="0.1"><span>10</span>
+
+<br>
+<br>
+
+<label for="text">Text</label>
+<br>
+<input type="text" name="text" maxlength="20">
+
+<br>
+<br>
+<label for="password">Password</label>
+<br>
+<input type="password" name="password">
+
+<br>
+<br>
+
+<label for="select">Select</label>
+<br>
+<select name="select">
+	<option value="1">Select this one</option>
+	<option value="2">Or this one</option>
+	<option value="3">Could this be it?</option>
+</select>
+<br>
+<br>
+<label for="datalist">Datalist</label>
+<br>
+<input list="datalist">
+<datalist id="datalist">
+	<option value="This"/>
+	<option value="Could"/>
+	<option value="Be"/>
+	<option value="It"/>
+</datalist>
+
+<h2>Bone up!</h2>
+<br>
+<br>
+</body>  
+</html>

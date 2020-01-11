@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1, h2 {
+  color: #414242;
+}
+
+table {
+  border-collapse: collapse
+
+}
+
+th {
+  background-color: #7a7d7d;
+  color: white;
+}
+
+table, td, th, input {
+  border: 1px solid #b2b7b8;
+}
+
+th, td {
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #ebeded;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #fafcfc;
+  color: #414242
+}
